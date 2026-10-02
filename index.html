@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>INNOVISION 2026 · The Celestial Odyssey · NIT Rourkela</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Space+Grotesk:wght@400;500;700&display=swap">
+<script src="js/all.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:#ECE8DF;color:#141312;font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:none;user-select:none;-webkit-user-drag:none}
+button{font:inherit;color:inherit}
+a{color:#141312}
+a:hover{color:#8a6a2a}
+:focus-visible{outline:2px solid #c9a24a;outline-offset:4px}
+[data-noscroll]::-webkit-scrollbar{display:none}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.32;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .08 0 0 0 0 .07 0 0 0 0 .06 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="position:fixed;inset:0;overflow:hidden;background:#ECE8DF;color:#141312;font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif">
+
+  <!-- ================= HOME / LANDING ================= -->
+  <main data-view="home" data-noscroll="" data-screen-label="Home" style="position:absolute;inset:0;overflow-x:hidden;overflow-y:auto;scrollbar-width:none;visibility:hidden">
+    <section data-hero="" style="position:relative;height:100vh;min-height:620px;overflow:hidden">
+      <div data-h-par="" style="position:absolute;inset:0;background:#ECE8DF">
+
+        <div data-depth=".12" style="position:absolute;inset:0;pointer-events:none">
+          <div data-h-ring="" style="position:absolute;left:calc(50% - min(84vh, 72vw) * .58);top:calc(53% - min(84vh, 72vw) * .58);width:calc(min(84vh, 72vw) * 1.16);height:calc(min(84vh, 72vw) * 1.16);border:1px solid rgba(20,19,18,.26);border-radius:50%">
+            <div data-orbit="" data-dur="70" data-start="40" style="position:absolute;inset:0">
+              <span style="position:absolute;left:50%;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#141312"></span>
+            </div>
+          </div>
+          <div data-h-ring="" style="position:absolute;left:calc(50% - min(84vh, 72vw) * .71);top:calc(53% - min(84vh, 72vw) * .71);width:calc(min(84vh, 72vw) * 1.42);height:calc(min(84vh, 72vw) * 1.42);border:1px dashed rgba(20,19,18,.4);border-radius:50%">
+            <div data-orbit="" data-dur="120" data-start="232" style="position:absolute;inset:0">
+              <img src="assets/moon.webp" alt="" style="position:absolute;left:50%;top:0;width:8vh;height:auto;margin:-4vh 0 0 -4vh;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+            </div>
+          </div>
+          <div data-h-ring="" style="position:absolute;left:calc(50% - min(84vh, 72vw) * .89);top:calc(53% - min(84vh, 72vw) * .89);width:calc(min(84vh, 72vw) * 1.78);height:calc(min(84vh, 72vw) * 1.78);border:1px dotted rgba(20,19,18,.5);border-radius:50%">
+            <div data-orbit="" data-dur="200" data-start="318" data-rev="1" style="position:absolute;inset:0">
+              <img src="assets/planet-yellow.webp" alt="" style="position:absolute;left:50%;top:0;width:14vh;height:14vh;margin:-7vh 0 0 -7vh;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+            </div>
+          </div>
+        </div>
+
+        <div data-hero-disc="" style="position:absolute;left:calc(50% - min(84vh, 72vw) / 2);top:calc(53% - min(84vh, 72vw) / 2);width:min(84vh, 72vw);height:min(84vh, 72vw);border-radius:50%;background:#141312;overflow:hidden">
+          <img src="assets/stars.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.95">
+          <span style="position:absolute;inset:4%;border-radius:50%;border:1px solid rgba(236,232,223,.14)"></span>
+        </div>
+
+        <div data-depth=".8" style="position:absolute;inset:0;pointer-events:none">
+          <img src="assets/home-rocks.webp" alt="" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.4)">
+        </div>
+
+        <sc-for list="{{ heroSparks }}" as="s" hint-placeholder-count="10">
+          <div data-h-spark="" style="position:absolute;left:{{ s.x }};top:{{ s.y }};width:{{ s.s }};height:{{ s.s }};color:{{ s.c }};pointer-events:none">
+            <svg data-twinkle="" viewBox="0 0 24 24" style="display:block;width:100%;height:100%"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+          </div>
+        </sc-for>
+
+        <div data-depth=".6" style="position:absolute;left:-14vh;bottom:-26vh;width:60vh;height:60vh;pointer-events:none">
+          <div data-h-planet="" style="width:100%;height:100%">
+            <img data-spin="320" src="assets/planet-green.webp" alt="" style="width:100%;height:100%;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+          </div>
+        </div>
+
+        <div data-depth=".4" style="position:absolute;left:calc(50% + min(84vh, 72vw) * .34);top:42%;width:46vh;height:46vh;pointer-events:none">
+          <div data-h-astro="" style="width:100%;height:100%">
+            <img data-bob="" src="assets/indian-astronaut.png" alt="Astronaut drifting beside the celestial disc" style="height:100%;width:auto;transform:rotate(-14deg);filter:grayscale(1) contrast(1.12) drop-shadow(0 24px 30px rgba(0,0,0,.35))">
+          </div>
+        </div>
+
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6vh 16px 0;text-align:center;pointer-events:none">
+          <div data-h-kicker="" style="display:flex;align-items:center;gap:14px;color:#ECE8DF;font-family:Cinzel,serif;font-weight:700;font-size:clamp(11px,1.05vw,16px);letter-spacing:.42em">
+            <svg viewBox="0 0 24 24" style="width:14px;height:14px;color:oklch(0.8 0.12 85)"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+            <span style="padding-left:.42em">NIT ROURKELA PRESENTS</span>
+            <svg viewBox="0 0 24 24" style="width:14px;height:14px;color:oklch(0.8 0.12 85)"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+          </div>
+          <h1 aria-label="Innovision" style="display:flex;margin:clamp(10px,2vh,22px) 0 clamp(8px,1.4vh,16px);font-family:Cinzel,serif;font-weight:900;font-size:clamp(56px,12.4vw,224px);line-height:.95;letter-spacing:.01em;color:#fff;mix-blend-mode:difference;white-space:nowrap">
+            <sc-for list="{{ heroChars }}" as="c" hint-placeholder-count="10"><span data-h-ch="" style="display:inline-block">{{ c.ch }}</span></sc-for>
+          </h1>
+          <div data-h-sub="" style="display:flex;align-items:center;gap:18px;color:oklch(0.8 0.12 85);font-family:Cinzel,serif;font-weight:700;font-size:clamp(12px,1.35vw,21px);letter-spacing:.32em">
+            <span style="width:clamp(24px,4vw,64px);height:1px;background:currentColor"></span>
+            <span style="padding-left:.32em">2026 · THE CELESTIAL ODYSSEY</span>
+            <span style="width:clamp(24px,4vw,64px);height:1px;background:currentColor"></span>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:clamp(22px,4.4vh,46px);pointer-events:auto">
+            <div data-h-cta="">
+              <a href="#/worlds/takeoff" onMouseEnter="{{ hover }}" style="display:inline-flex;align-items:center;justify-content:center;min-width:184px;padding:17px 30px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;color:#141312;background:#ECE8DF;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px);transition:background-color .4s cubic-bezier(.25,1,.1,1)" style-hover="background:oklch(0.8 0.12 85);color:#141312"><span data-scr="">BEGIN THE ODYSSEY</span></a>
+            </div>
+            <div data-h-cta="">
+              <a href="#register" onClick="{{ register }}" onMouseEnter="{{ hover }}" style="position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;min-width:168px;padding:17px 30px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;color:#ECE8DF;background:rgba(236,232,223,.85);clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)" style-hover="color:oklch(0.8 0.12 85)">
+                <span style="position:absolute;inset:1.5px;z-index:-1;background:#141312;clip-path:polygon(11px 0,100% 0,100% calc(100% - 11px),calc(100% - 11px) 100%,0 100%,0 11px)"></span>
+                <span data-scr="">REGISTER</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-h-scroll="" style="position:absolute;left:0;right:0;bottom:max(26px, calc(47% - min(84vh, 72vw) / 2 + 26px));display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;letter-spacing:.3em;color:#fff;mix-blend-mode:difference;pointer-events:none">
+          <span>SCROLL</span>
+          <i data-hint-line="" style="display:block;width:1.5px;height:38px;background:linear-gradient(#fff,transparent)"></i>
+        </div>
+      </div>
+    </section>
+
+    <section style="position:relative;padding:clamp(96px,16vh,180px) clamp(20px,4vw,64px);background:#ECE8DF">
+      <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,96px);align-items:start">
+        <div data-reveal="">
+          <p style="display:flex;align-items:center;gap:10px;margin:0 0 20px;font-size:13px;font-weight:700;letter-spacing:.3em;color:#8a6a2a">
+            <svg viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+            MISSION BRIEFING
+          </p>
+          <h2 style="margin:0;font-family:Cinzel,serif;font-weight:900;font-size:clamp(40px,5.4vw,88px);line-height:1;letter-spacing:-.01em;text-wrap:balance">Three worlds. One celestial odyssey.</h2>
+        </div>
+        <div data-reveal="" style="font-size:18px;line-height:1.65;color:#2b2926">
+          <p style="margin:0 0 18px;text-wrap:pretty">Innovision is the techno-management fest of NIT Rourkela: a few days where the campus turns into a launch pad for builders, thinkers and makers from across the country.</p>
+          <p style="margin:0;text-wrap:pretty">This year the fest charts a Celestial Odyssey. Pick your world: <b>Flagship Events</b> for the technical arena, <b>Main Events</b> for workshops and talks, or <b>DTS and Fun Events</b> for the games, quizzes and showcases where the fest peaks.</p>
+          <div style="margin-top:32px;border-top:1px solid rgba(20,19,18,.18);font-size:16px">
+            <div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(20,19,18,.18)"><span style="color:#8a6a2a;font-weight:700">Host</span><span>NIT Rourkela, Odisha</span></div>
+            <div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(20,19,18,.18)"><span style="color:#8a6a2a;font-weight:700">Worlds</span><span>Flagship Events · Main Events · DTS and Fun Events</span></div>
+            <div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(20,19,18,.18)"><span style="color:#8a6a2a;font-weight:700">Crew</span><span>Students, makers &amp; dreamers</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="position:relative;padding:clamp(96px,14vh,160px) clamp(20px,4vw,64px);background:#141312;color:#ECE8DF;overflow:hidden">
+      <img src="assets/stars.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7;pointer-events:none">
+      <div style="position:relative;max-width:1240px;margin:0 auto">
+        <header data-reveal="" style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px;margin-bottom:56px">
+          <div>
+            <p style="display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:13px;font-weight:700;letter-spacing:.3em;color:oklch(0.8 0.12 85)">
+              <svg viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+              CHOOSE YOUR WORLD
+            </p>
+            <h2 style="margin:0;font-family:Cinzel,serif;font-weight:900;font-size:clamp(36px,5vw,80px);line-height:1">The Odyssey Map</h2>
+          </div>
+          <p style="max-width:380px;margin:0;font-size:16px;line-height:1.6;color:rgba(236,232,223,.8);text-wrap:pretty">Three worlds, three kinds of mission. Each one opens into its own line-up of events.</p>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+          <sc-for list="{{ worlds }}" as="w" hint-placeholder-count="3">
+            <a data-reveal="" href="{{ w.href }}" onMouseEnter="{{ w.onEnter }}" onMouseLeave="{{ w.onLeave }}" style="position:relative;isolation:isolate;display:block;padding:28px 28px 40px;text-decoration:none;color:#ECE8DF">
+              <span style="position:absolute;inset:0;z-index:-1;background:{{ w.accentL }};opacity:.6;clip-path:polygon(0 0,100% 0,100% calc(100% - 36px),calc(100% - 36px) 100%,0 100%)"></span>
+              <span style="position:absolute;inset:1.5px;z-index:-1;background:#1b1a18;clip-path:polygon(0 0,100% 0,100% calc(100% - 35px),calc(100% - 35px) 100%,0 100%)"></span>
+              <div style="position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;background:#0d0c0b;margin-bottom:26px">
+                <img src="assets/stars.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+                <div data-card-planet="" style="position:absolute;inset:12%">
+                  <img data-spin="160" src="{{ w.planet }}" alt="" style="width:100%;height:100%;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+                </div>
+              </div>
+              <span style="font-size:13px;font-weight:700;letter-spacing:.2em;color:{{ w.accentL }}">{{ w.statLU }} · {{ w.categoryU }}</span>
+              <h3 style="margin:12px 0 10px;font-family:Cinzel,serif;font-weight:900;font-size:28px;line-height:1.1">{{ w.name }}</h3>
+              <p style="margin:0 0 22px;font-size:15px;line-height:1.6;color:rgba(236,232,223,.8)">{{ w.tagline }}</p>
+              <span style="display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:.08em">EXPLORE
+                <svg width="16" height="10" viewBox="0 0 16 10"><path d="M11 1l4 4-4 4M15 5H0" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>
+              </span>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="position:relative;padding:clamp(110px,18vh,200px) clamp(20px,4vw,64px) clamp(90px,12vh,140px);text-align:center;background:#ECE8DF">
+      <div data-reveal="" style="display:flex;flex-direction:column;align-items:center">
+        <svg viewBox="0 0 24 24" style="width:28px;height:28px;color:#8a6a2a"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+        <h2 style="margin:22px 0 22px;font-family:Cinzel,serif;font-weight:900;font-size:clamp(48px,8.4vw,150px);line-height:.95;letter-spacing:-.01em">The odyssey<br>awaits.</h2>
+        <p style="margin:0 auto 36px;max-width:520px;font-size:18px;line-height:1.6;color:#3a3733;text-wrap:pretty">Innovision 2026 is boarding soon at NIT Rourkela. Claim your seat on the voyage.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+          <a href="#register" onClick="{{ register }}" onMouseEnter="{{ hover }}" style="display:inline-flex;align-items:center;justify-content:center;min-width:168px;padding:17px 30px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;color:#ECE8DF;background:#141312;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px);transition:background-color .4s cubic-bezier(.25,1,.1,1)" style-hover="background:#8a6a2a;color:#ECE8DF"><span data-scr="">REGISTER</span></a>
+          <a href="#/worlds/takeoff" onMouseEnter="{{ hover }}" style="position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;min-width:168px;padding:17px 30px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;color:#141312;background:#141312;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)" style-hover="color:#8a6a2a">
+            <span style="position:absolute;inset:1.5px;z-index:-1;background:#ECE8DF;clip-path:polygon(11px 0,100% 0,100% calc(100% - 11px),calc(100% - 11px) 100%,0 100%,0 11px)"></span>
+            <span data-scr="">EXPLORE THE WORLDS</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer style="position:relative;overflow:hidden;background:#141312;color:#ECE8DF;border-radius:50% 50% 0 0 / 140px 140px 0 0;padding:150px clamp(20px,4vw,64px) calc(clamp(16px,2.6vw,44px) + 90px)">
+      <img src="assets/stars.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;pointer-events:none">
+      <div style="position:relative;max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:end">
+        <div>
+          <div style="font-family:Cinzel,serif;font-weight:900;font-size:clamp(28px,3vw,44px);letter-spacing:.04em">INNOVISION</div>
+          <div style="margin-top:8px;font-size:13px;letter-spacing:.3em;color:rgba(236,232,223,.75)">THE CELESTIAL ODYSSEY · NIT ROURKELA, ODISHA</div>
+        </div>
+        <div style="display:flex;gap:28px;font-weight:500;font-size:15px">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" onMouseEnter="{{ hover }}" style="color:#ECE8DF;text-decoration:none"><span data-scr="">INSTAGRAM</span></a>
+          <a href="#about" onClick="{{ openAbout }}" onMouseEnter="{{ hover }}" style="color:#ECE8DF;text-decoration:none"><span data-scr="">ABOUT</span></a>
+          <a href="#top" onClick="{{ toTop }}" onMouseEnter="{{ hover }}" style="color:#ECE8DF;text-decoration:none"><span data-scr="">BACK TO ORBIT</span></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ================= WORLDS SLIDER ================= -->
+  <section data-view="worlds" data-screen-label="Events – Worlds" aria-label="Choose a world" onWheel="{{ onWheel }}" onTouchStart="{{ onTouchStart }}" onTouchEnd="{{ onTouchEnd }}" style="position:absolute;inset:0;overflow:hidden;visibility:hidden">
+    <sc-for list="{{ worlds }}" as="w" hint-placeholder-count="1">
+      <article data-slide="{{ $index }}" aria-label="{{ w.name }}" style="position:absolute;inset:0;overflow:hidden;visibility:hidden">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,#ECE8DF 0%,#DCD7CB 100%)"></div>
+        <div style="position:absolute;inset:0;pointer-events:none">
+          <img src="assets/cloud-5.webp" alt="" data-depth=".3" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.24">
+          <img src="assets/cloud-4.webp" alt="" data-depth=".55" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.2">
+        </div>
+        <div data-s-outline="" aria-hidden="true" style="position:absolute;left:0;right:0;top:47%;margin-top:-.5em;overflow:hidden;white-space:nowrap;pointer-events:none;font-weight:700;font-size:clamp(120px,21vw,360px);line-height:1;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px rgba(20,19,18,.32)">
+          <div data-marquee="36" style="display:inline-flex"><span style="flex:none">{{ w.name }}&nbsp;</span><span style="flex:none">{{ w.name }}&nbsp;</span></div>
+        </div>
+        <a data-s-label="" href="{{ w.href }}" onMouseEnter="{{ beep }}" style="position:absolute;top:47%;right:{{ labelRight }};margin-top:-.7em;display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;font-weight:700;font-size:clamp(14px,1.15vw,19px);letter-spacing:.02em;text-transform:uppercase;color:#141312;z-index:3" style-hover="color:#141312">
+          <span style="display:flex;align-items:center;gap:10px">Explore <span style="width:28px;height:2px;background:{{ w.accent }}"></span></span>
+          <small style="margin-top:8px;font-weight:500;font-size:11px;letter-spacing:.25em;opacity:.8">{{ w.category }}</small>
+        </a>
+        <div data-s-hero="" style="position:absolute;left:50%;top:54%;width:min(112vw, 150vh);aspect-ratio:1;margin-left:calc(min(112vw, 150vh) / -2)">
+          <div data-s-rot="" onClick="{{ w.onExplore }}" style="position:absolute;inset:0;cursor:pointer">
+            <img data-spin="140" src="{{ w.planet }}" alt="" style="width:100%;height:100%;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+          </div>
+          <div data-s-astro="" style="position:absolute;left:0;right:0;bottom:{{ w.astroBottom }};height:{{ w.astroH }};display:flex;justify-content:center;pointer-events:none">
+            <img src="{{ w.astro }}" alt="" style="height:100%;width:auto;filter:grayscale(1) contrast(1.3) brightness(1.05) drop-shadow(0 18px 30px rgba(0,0,0,.35))">
+          </div>
+        </div>
+      </article>
+    </sc-for>
+    <button type="button" aria-label="Previous world" onClick="{{ prevSlide }}" onMouseEnter="{{ beep }}" style="position:absolute;top:64%;left:clamp(16px,2.6vw,44px);z-index:5;display:{{ arrowsDisplay }};place-items:center;width:64px;height:64px;border-radius:50%;border:1.5px solid rgba(20,19,18,.8);background:rgba(236,232,223,.4);color:#141312;cursor:pointer;opacity:.6;transition:opacity .4s,background-color .4s,color .4s" style-hover="opacity:1;background:#141312;color:#ECE8DF">
+      <svg viewBox="0 0 24 24" style="width:24px;height:24px"><path d="M14 6l-6 6 6 6M8 12h12" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>
+    </button>
+    <button type="button" aria-label="Next world" onClick="{{ nextSlide }}" onMouseEnter="{{ beep }}" style="position:absolute;top:64%;right:clamp(16px,2.6vw,44px);z-index:5;display:{{ arrowsDisplay }};place-items:center;width:64px;height:64px;border-radius:50%;border:1.5px solid rgba(20,19,18,.8);background:rgba(236,232,223,.4);color:#141312;cursor:pointer;opacity:.6;transition:opacity .4s,background-color .4s,color .4s" style-hover="opacity:1;background:#141312;color:#ECE8DF">
+      <svg viewBox="0 0 24 24" style="width:24px;height:24px"><path d="M10 6l6 6-6 6M16 12H4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>
+    </button>
+  </section>
+
+  <!-- ================= WORLD DETAIL ================= -->
+  <section data-view="detail" data-screen-label="Events – World detail" aria-label="World details" style="position:absolute;inset:0;overflow:hidden;visibility:hidden;background:#141312">
+    <div data-d-scroller="" data-noscroll="" style="position:absolute;inset:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none">
+      <div data-d-track="" style="position:relative;height:300vh">
+        <div style="position:sticky;top:0;height:100vh;overflow:hidden">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,#ECE8DF 0%,#D6D0C3 100%)"></div>
+
+          <sc-if value="{{ isTakeoff }}" hint-placeholder-val="{{ true }}">
+            <div data-speed="-0.012" style="position:absolute;inset:0;pointer-events:none">
+              <img src="assets/cloud-6.webp" alt="" data-depth=".2" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.26">
+              <img src="assets/cloud-5.webp" alt="" data-depth=".35" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.26">
+              <img src="assets/cloud-4.webp" alt="" data-depth=".5" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.24">
+            </div>
+            <div data-speed="-0.14" style="position:absolute;left:calc(50% - max(47vw, 60vh) / 2);top:calc(77% - max(47vw, 60vh) * 1.329);width:max(47vw, 60vh);pointer-events:none">
+              <img src="assets/big-spaceship.webp" alt="" data-depth=".25" style="width:100%;height:auto;filter:grayscale(1) brightness(1.9) contrast(1.15)">
+            </div>
+          </sc-if>
+          <sc-if value="{{ isTouchdown }}" hint-placeholder-val="{{ false }}">
+            <div data-speed="-0.012" style="position:absolute;inset:0;pointer-events:none">
+              <img src="assets/cloud-5.webp" alt="" data-depth=".2" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.26">
+              <img src="assets/cloud-4.webp" alt="" data-depth=".45" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.22">
+            </div>
+            <div data-speed="-0.08" style="position:absolute;left:min(-2vw, calc(50% - max(84vw, 120vh) * .53));top:calc(54% - max(84vw, 120vh) * .5);width:max(84vw, 120vh);pointer-events:none">
+              <div data-depth=".3" style="position:relative">
+                <img src="assets/planet-blue-half.webp" alt="" style="width:100%;height:auto;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+              </div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ isHighpoint }}" hint-placeholder-val="{{ false }}">
+            <div data-speed="-0.012" style="position:absolute;inset:0;pointer-events:none">
+              <img src="assets/cloud-5.webp" alt="" data-depth=".2" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.26">
+              <img src="assets/cloud-4.webp" alt="" data-depth=".4" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(1.15);mix-blend-mode:multiply;opacity:.22">
+            </div>
+            <div data-speed="-0.16" style="position:absolute;left:calc(50% - max(37vw, 52vh) / 2.4);top:calc(38% - max(37vw, 52vh) * 1.0625);width:max(37vw, 52vh);pointer-events:none">
+              <img src="assets/moon.webp" alt="" data-depth=".15" style="width:100%;height:auto;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+            </div>
+            <div data-speed="-0.1" style="position:absolute;right:-4%;top:-6%;width:min(34vw, 560px);opacity:.9;pointer-events:none">
+              <img src="assets/cloud-tr.webp" alt="" data-depth=".3" style="width:100%;height:auto;filter:grayscale(1) contrast(1.2)">
+            </div>
+            <div data-speed="-0.1" style="position:absolute;right:10%;top:-12%;height:88%;pointer-events:none">
+              <img src="assets/spaceship.webp" alt="" data-depth=".35" style="height:100%;width:auto;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+            </div>
+          </sc-if>
+
+          <div data-d-titleblock="" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none">
+            <div data-d-stats="" style="display:flex;justify-content:space-between;width:min(76vw, 1400px);margin:0 auto -.4em;font-weight:700;font-size:clamp(15px,1.6vw,26px);text-transform:uppercase;color:#141312">
+              <span>{{ cw.statL }}</span><span>{{ cw.statR }}</span>
+            </div>
+            <h1 data-d-title="" aria-label="{{ cw.name }}" style="margin:0;font-family:Cinzel,serif;font-weight:900;font-size:clamp(56px,13vw,250px);line-height:1;letter-spacing:-.01em;white-space:nowrap;color:#141312;text-shadow:{{ titleShadow }}">
+              <sc-for list="{{ cw.chars }}" as="c" hint-placeholder-count="8"><span data-d-ch="" style="display:inline-block">{{ c.ch }}</span></sc-for>
+            </h1>
+          </div>
+
+          <sc-if value="{{ isTakeoff }}" hint-placeholder-val="{{ true }}">
+            <div data-speed="0" style="position:absolute;left:calc(50% - max(80vw, 120vh) / 2);bottom:-2%;width:max(80vw, 120vh);pointer-events:none">
+              <img src="assets/floor-v2.webp" alt="" style="width:100%;height:auto;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+              <div style="position:absolute;left:0;right:0;bottom:58%;height:42vh;display:flex;justify-content:center">
+                <img src="assets/astro-red.webp" alt="Astronaut walking towards the spaceship" style="height:100%;width:auto;filter:grayscale(1) contrast(1.3) brightness(1.05)">
+              </div>
+            </div>
+            <div data-speed="-0.2" style="position:absolute;inset:0;pointer-events:none">
+              <img src="assets/cloud-0.webp" alt="" data-depth=".9" style="position:absolute;left:-4%;top:-3%;width:108%;height:106%;object-fit:cover;filter:grayscale(1) contrast(1.2) brightness(1.1)">
+            </div>
+          </sc-if>
+          <sc-if value="{{ isTouchdown }}" hint-placeholder-val="{{ false }}">
+            <div data-speed="-0.08" style="position:absolute;left:min(-2vw, calc(50% - max(84vw, 120vh) * .53));top:calc(54% - max(84vw, 120vh) * .5);width:max(84vw, 120vh);pointer-events:none">
+              <div data-depth=".3" style="position:relative;aspect-ratio:2000 / 1884">
+                <div style="position:absolute;left:47%;top:46%;height:33%">
+                  <img src="assets/astro-yellow.webp" alt="Astronaut sitting on the edge of a planet" style="height:100%;width:auto;filter:grayscale(1) contrast(1.3) brightness(1.05)">
+                </div>
+              </div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ isHighpoint }}" hint-placeholder-val="{{ false }}">
+            <div data-speed="-0.02" style="position:absolute;right:-8%;bottom:-10%;width:max(75vw, 110vh);pointer-events:none">
+              <img src="assets/floor.webp" alt="" data-depth=".5" style="width:100%;height:auto;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+            </div>
+            <div data-speed="-0.12" style="position:absolute;left:-2%;top:-6%;height:42%;pointer-events:none">
+              <img src="assets/cloud-tl.webp" alt="" data-depth=".8" style="height:100%;width:auto;filter:grayscale(1) contrast(1.2)">
+            </div>
+            <div data-speed="-0.04" style="position:absolute;left:0;right:0;bottom:-10%;height:58%;display:flex;justify-content:center;pointer-events:none">
+              <img src="assets/astro-green.webp" alt="Astronaut looking at the spaceship" style="height:100%;width:auto;filter:grayscale(1) contrast(1.3) brightness(1.05)">
+            </div>
+          </sc-if>
+
+          <h2 style="position:absolute;top:24%;left:0;right:0;width:{{ taglineW }};margin:0 auto;font-family:Cinzel,serif;font-weight:900;font-size:clamp(26px,3.1vw,56px);line-height:1.04;text-align:center;text-transform:uppercase;color:#fff;mix-blend-mode:difference;pointer-events:none">
+            <sc-for list="{{ cw.words }}" as="wd" hint-placeholder-count="5"><span data-d-word="" style="display:inline-block;margin:0 .14em">{{ wd.t }}</span></sc-for>
+          </h2>
+
+          <sc-if value="{{ notCompact }}" hint-placeholder-val="{{ true }}">
+            <div data-d-panels="" style="position:absolute;inset:0;pointer-events:none">
+              <div data-d-intro="" style="position:absolute;left:6%;top:17%;width:min(400px, 26vw);pointer-events:auto;isolation:isolate;padding:34px 40px 52px;font-size:17px;line-height:1.6;color:#ECE8DF">
+                <span style="position:absolute;inset:0;z-index:-1;background:{{ cw.accentL }};clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),calc(100% - 64px) 100%,0 100%)"></span>
+                <span style="position:absolute;inset:1.5px;z-index:-1;background:rgba(20,19,18,.92);clip-path:polygon(0 0,100% 0,100% calc(100% - 63px),calc(100% - 63px) 100%,0 100%)"></span>
+                <p style="margin:0">{{ cw.intro }}</p>
+              </div>
+              <div data-d-spec="" style="position:absolute;right:6%;top:13%;width:min(440px, 27vw);pointer-events:auto;color:#ECE8DF">
+                <div style="display:inline-block;margin-bottom:-1px;padding:16px 64px 14px 34px;font-family:Cinzel,serif;font-weight:900;font-size:clamp(18px,1.6vw,26px);background:rgba(20,19,18,.96);clip-path:polygon(0 0,calc(100% - 24px) 0,100% 100%,0 100%)">MISSION SPECS</div>
+                <div style="position:relative;isolation:isolate;padding:34px 40px 52px;font-size:17px;line-height:1.6">
+                  <span style="position:absolute;inset:0;z-index:-1;background:{{ cw.accentL }};clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),calc(100% - 64px) 100%,0 100%)"></span>
+                  <span style="position:absolute;inset:1.5px;z-index:-1;background:rgba(20,19,18,.92);clip-path:polygon(0 0,100% 0,100% calc(100% - 63px),calc(100% - 63px) 100%,0 100%)"></span>
+                  <dl style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px 40px;margin:0">
+                    <sc-for list="{{ cw.specs }}" as="sp" hint-placeholder-count="5">
+                      <dt style="color:{{ cw.accentL }}">{{ sp.k }}</dt><dd style="margin:0">{{ sp.v }}</dd>
+                    </sc-for>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <div data-d-fade="" style="position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(180deg,rgba(20,19,18,0),#141312 85%);pointer-events:none"></div>
+          <div data-d-hint="" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:calc(clamp(16px,2.6vw,44px) + 110px);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;letter-spacing:.3em;color:#141312;pointer-events:none">
+            <span>SCROLL</span>
+            <i data-hint-line="" style="display:block;width:1.5px;height:38px;background:linear-gradient(#141312,transparent)"></i>
+          </div>
+        </div>
+      </div>
+
+      <section aria-label="{{ cw.category }}" style="position:relative;padding:16vh clamp(16px,2.6vw,44px) calc(clamp(16px,2.6vw,44px) + 200px);background:#141312;color:#ECE8DF">
+        <sc-if value="{{ compact }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;gap:28px;max-width:640px;margin:0 auto 56px">
+            <div data-d-card="" style="position:relative;isolation:isolate;padding:26px 24px 46px;font-size:16px;line-height:1.6">
+              <span style="position:absolute;inset:0;z-index:-1;background:{{ cw.accentL }};clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),calc(100% - 64px) 100%,0 100%)"></span>
+              <span style="position:absolute;inset:1.5px;z-index:-1;background:#1b1a18;clip-path:polygon(0 0,100% 0,100% calc(100% - 63px),calc(100% - 63px) 100%,0 100%)"></span>
+              <p style="margin:0">{{ cw.intro }}</p>
+            </div>
+            <div data-d-card="">
+              <div style="display:inline-block;margin-bottom:-1px;padding:16px 64px 14px 24px;font-family:Cinzel,serif;font-weight:900;font-size:18px;background:#26241f;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 100%,0 100%)">MISSION SPECS</div>
+              <div style="position:relative;isolation:isolate;padding:26px 24px 46px;font-size:16px;line-height:1.6">
+                <span style="position:absolute;inset:0;z-index:-1;background:{{ cw.accentL }};clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),calc(100% - 64px) 100%,0 100%)"></span>
+                <span style="position:absolute;inset:1.5px;z-index:-1;background:#1b1a18;clip-path:polygon(0 0,100% 0,100% calc(100% - 63px),calc(100% - 63px) 100%,0 100%)"></span>
+                <dl style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 24px;margin:0">
+                  <sc-for list="{{ cw.specs }}" as="sp" hint-placeholder-count="5">
+                    <dt style="color:{{ cw.accentL }}">{{ sp.k }}</dt><dd style="margin:0">{{ sp.v }}</dd>
+                  </sc-for>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+        <header style="max-width:1240px;margin:0 auto 48px">
+          <p style="margin:0 0 12px;font-size:13px;letter-spacing:.3em;color:{{ cw.accentL }}">{{ cw.categoryU }}</p>
+          <h2 style="margin:0;font-family:Cinzel,serif;font-weight:900;font-size:clamp(36px,5vw,80px);line-height:1">Missions</h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1240px;margin:0 auto">
+          <sc-for list="{{ cw.missions }}" as="m" hint-placeholder-count="4">
+            <article data-d-card="">
+              <div style="position:relative;isolation:isolate;height:100%;padding:28px 28px 40px;font-size:15px;line-height:1.6;transition:transform .6s cubic-bezier(.25,1,.1,1)" style-hover="transform:translateY(-6px)">
+                <span style="position:absolute;inset:0;z-index:-1;background:{{ cw.accentL }};opacity:.75;clip-path:polygon(0 0,100% 0,100% calc(100% - 36px),calc(100% - 36px) 100%,0 100%)"></span>
+                <span style="position:absolute;inset:1.5px;z-index:-1;background:#1b1a18;clip-path:polygon(0 0,100% 0,100% calc(100% - 35px),calc(100% - 35px) 100%,0 100%)"></span>
+                <span style="font-size:13px;letter-spacing:.2em;color:{{ cw.accentL }}">{{ m.no }}</span>
+                <h3 style="margin:14px 0 10px;font-family:Cinzel,serif;font-weight:900;font-size:24px;line-height:1.1">{{ m.name }}</h3>
+                <p style="margin:0;color:rgba(236,232,223,.82)">{{ m.text }}</p>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+        <div style="display:flex;justify-content:center;margin-top:72px">
+          <a href="{{ nw.href }}" onMouseEnter="{{ beep }}" style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:#ECE8DF">
+            <small style="font-size:13px;letter-spacing:.3em;opacity:.7">NEXT WORLD</small>
+            <strong style="font-family:Cinzel,serif;font-weight:900;font-size:clamp(40px,7vw,120px);line-height:1;color:transparent;-webkit-text-stroke:1.5px #ECE8DF;transition:color .6s cubic-bezier(.25,1,.1,1);text-align:center" style-hover="color:#ECE8DF">{{ nw.nameU }}</strong>
+          </a>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ================= HUD ================= -->
+  <header data-hud="" style="position:fixed;left:0;right:0;top:0;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:start;padding:clamp(16px,2.6vw,44px);pointer-events:none;color:#fff;mix-blend-mode:difference">
+    <div style="justify-self:start;pointer-events:auto">
+      <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+        <span style="display:block;font-weight:500;font-size:clamp(11px,1vw,15px);line-height:1.1;letter-spacing:.02em">NIT ROURKELA<br>PRESENTS</span>
+      </sc-if>
+      <sc-if value="{{ isWorlds }}" hint-placeholder-val="{{ false }}">
+        <span style="display:block;font-weight:500;font-size:clamp(11px,1vw,15px);line-height:1.1;letter-spacing:.02em">INNOVATE<br>&amp; BEYOND</span>
+      </sc-if>
+      <sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+        <a href="{{ backHref }}" onMouseEnter="{{ hover }}" style="display:inline-flex;align-items:center;gap:10px;padding:6px 0;text-decoration:none;font-weight:500;font-size:15px;letter-spacing:.02em;color:#fff">
+          <svg width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><path d="M5 1 1 5l4 4M1 5h15" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg>
+          <span data-scr="">BACK</span>
+        </a>
+      </sc-if>
+    </div>
+    <a href="#/" aria-label="Innovision home" onMouseEnter="{{ beep }}" style="justify-self:center;display:inline-flex;align-items:center;gap:12px;color:#fff;text-decoration:none;pointer-events:auto">
+      <svg viewBox="0 0 40 40" aria-hidden="true" style="width:clamp(28px,2.8vw,46px);height:auto">
+        <ellipse cx="20" cy="20" rx="18" ry="18" fill="none" stroke="currentColor" stroke-width="4"></ellipse>
+        <ellipse cx="20" cy="22" rx="11" ry="7" fill="none" stroke="currentColor" stroke-width="3.5"></ellipse>
+      </svg>
+      <span style="font-family:Cinzel,serif;font-weight:900;font-size:clamp(18px,2.4vw,38px);letter-spacing:.04em">INNOVISION</span>
+    </a>
+    <button type="button" onClick="{{ toggleAbout }}" onMouseEnter="{{ hover }}" aria-expanded="{{ aboutExpanded }}" style="justify-self:end;display:inline-flex;align-items:center;gap:10px;padding:6px 0;border:0;background:none;cursor:pointer;font-weight:500;font-size:clamp(13px,1vw,15px);letter-spacing:.02em;color:#fff;pointer-events:auto"><span data-scr="">ABOUT</span></button>
+  </header>
+
+  <footer data-hud="" style="position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:space-between;align-items:end;padding:clamp(16px,2.6vw,44px);pointer-events:none;color:#fff;mix-blend-mode:difference">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" onMouseEnter="{{ hover }}" style="display:inline-flex;align-items:center;padding:6px 0;text-decoration:none;font-weight:500;font-size:clamp(13px,1vw,15px);letter-spacing:.02em;color:#fff;pointer-events:auto"><span data-scr="">INSTAGRAM</span></a>
+    <button type="button" onClick="{{ toggleSound }}" onMouseEnter="{{ hover }}" aria-pressed="{{ soundOn }}" aria-label="{{ soundLabel }}" style="display:inline-flex;align-items:center;gap:10px;padding:6px 0;border:0;background:none;cursor:pointer;font-weight:500;font-size:clamp(13px,1vw,15px);letter-spacing:.02em;color:#fff;pointer-events:auto">
+      <svg width="40" height="9" viewBox="0 0 73 9" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-miterlimit="10">
+        <sc-if value="{{ muted }}" hint-placeholder-val="{{ false }}"><path d="M0 4.5h73"></path></sc-if>
+        <sc-if value="{{ soundOn }}" hint-placeholder-val="{{ true }}"><g data-wave=""><path d="M0 .5C3.33.5 3.33 8.5 6.66 8.5 9.99 8.5 10 .5 13.33.5c3.33 0 3.33 8 6.67 8"></path><path d="M53 .5c3.33 0 3.33 8 6.66 8 3.33 0 3.34-8 6.67-8 3.33 0 3.33 8 6.67 8"></path><path d="M20 8.5c2.5 0 3-6.5 6-7.5 3-1 3.33 5.5 6.66 5.5S36 3 39.33 3s3.33 5 6.67 5c3 0 3.8-7.5 7-7.5"></path></g></sc-if>
+      </g></svg>
+      <span data-scr="">SOUND</span>
+    </button>
+  </footer>
+
+  <nav aria-label="Worlds" style="position:fixed;left:0;right:0;bottom:{{ navBottom }};z-index:51;display:flex;justify-content:center;padding:0 8px;pointer-events:none;opacity:{{ navO }};transform:translateY({{ navY }});transition:opacity .8s cubic-bezier(.25,1,.1,1),transform .8s cubic-bezier(.25,1,.1,1)">
+    <div style="position:relative;pointer-events:{{ navPE }};padding:14px 10px 8px;background:rgba(20,19,18,.9);clip-path:polygon(0 12px,118px 12px,130px 0,calc(100% - 20px) 0,100% 20px,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%);backdrop-filter:blur(8px)">
+      <div style="position:relative;display:flex">
+        <span style="position:absolute;top:0;bottom:0;left:0;width:33.333%;background:{{ navGlow }};transform:translateX({{ navX }});transition:transform .9s cubic-bezier(.25,1,.1,1);pointer-events:none"></span>
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="3">
+          <button type="button" onClick="{{ n.onClick }}" onMouseEnter="{{ beep }}" aria-current="{{ n.current }}" style="position:relative;width:clamp(100px,13vw,180px);padding:16px 0;border:0;background:none;cursor:pointer;font-weight:500;font-size:clamp(11px,1.1vw,16px);letter-spacing:.02em;color:{{ n.color }};transition:color .5s cubic-bezier(.25,1,.1,1)">{{ n.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= CURTAIN ================= -->
+  <div data-curtain="" aria-hidden="true" style="position:fixed;inset:0;z-index:40;overflow:hidden;pointer-events:none">
+    <div data-c-layer="" style="position:absolute;top:0;left:0;width:100%;height:300vh;transform:translateY(100%);filter:grayscale(1) sepia(.15) brightness(.3)">
+      <img src="assets/cloud-5.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom">
+      <div style="height:calc(100vh + 4px);margin:-2px 0;background:#743a61"></div>
+      <img src="assets/cloud-5.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom;transform:scaleY(-1)">
+    </div>
+    <div data-c-layer="" style="position:absolute;top:0;left:0;width:100%;height:300vh;transform:translateY(100%);filter:grayscale(1) sepia(.15) brightness(.55)">
+      <img src="assets/cloud-4.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom">
+      <div style="height:calc(100vh + 4px);margin:-2px 0;background:#ba647c"></div>
+      <img src="assets/cloud-4.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom;transform:scaleY(-1)">
+    </div>
+    <div data-c-layer="" style="position:absolute;top:0;left:0;width:100%;height:300vh;transform:translateY(100%);filter:grayscale(1) sepia(.15) brightness(.8)">
+      <img src="assets/cloud-3.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom">
+      <div style="height:calc(100vh + 4px);margin:-2px 0;background:#d95535"></div>
+      <img src="assets/cloud-3.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom;transform:scaleY(-1)">
+    </div>
+    <div data-c-layer="" style="position:absolute;top:0;left:0;width:100%;height:300vh;transform:translateY(100%);filter:grayscale(1) sepia(.15) brightness(1)">
+      <img src="assets/cloud-2.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom">
+      <div style="height:calc(100vh + 4px);margin:-2px 0;background:#f99f51"></div>
+      <img src="assets/cloud-2.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom;transform:scaleY(-1)">
+    </div>
+    <div data-c-layer="" style="position:absolute;top:0;left:0;width:100%;height:300vh;transform:translateY(100%);filter:grayscale(1) sepia(.12) brightness(1.18)">
+      <img src="assets/cloud-1.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom">
+      <div style="position:relative;height:calc(100vh + 4px);margin:-2px 0;background:#fec466;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;color:#141312;padding:0 20px">
+        <svg data-c-spark="" viewBox="0 0 24 24" style="width:22px;height:22px"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+        <span style="font-size:12px;font-weight:700;letter-spacing:.34em">{{ curtainKicker }}</span>
+        <span style="font-family:Cinzel,serif;font-weight:900;font-size:clamp(34px,6vw,96px);line-height:1;letter-spacing:.02em">{{ curtainLabel }}</span>
+      </div>
+      <img src="assets/cloud-1.webp" alt="" style="width:100%;height:100vh;object-fit:cover;object-position:center bottom;transform:scaleY(-1)">
+    </div>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <aside aria-hidden="{{ aboutHidden }}" aria-label="About Innovision" style="position:fixed;inset:0;z-index:60;visibility:{{ aboutVis }};transition:visibility 0s linear {{ aboutDelay }}">
+    <div onClick="{{ closeAbout }}" style="position:absolute;inset:0;background:rgba(10,9,8,.5);backdrop-filter:blur(4px);opacity:{{ aboutO }};transition:opacity .8s cubic-bezier(.25,1,.1,1)"></div>
+    <div data-noscroll="" style="position:absolute;top:0;right:0;bottom:0;width:min(540px, 100%);padding:calc(clamp(16px,2.6vw,44px) + 70px) clamp(24px,4vw,56px) 48px;overflow-y:auto;scrollbar-width:none;background:#141312;color:#ECE8DF;border-left:1.5px solid oklch(0.8 0.12 85);transform:translateX({{ aboutX }});transition:transform .8s cubic-bezier(.25,1,.1,1);font-size:17px;line-height:1.6">
+      <img src="assets/stars.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35;pointer-events:none">
+      <div style="position:relative">
+        <button type="button" onClick="{{ closeAbout }}" onMouseEnter="{{ hover }}" style="position:absolute;top:-70px;right:0;padding:6px 0;border:0;background:none;cursor:pointer;font-weight:500;font-size:15px;letter-spacing:.02em;color:#ECE8DF"><span data-scr="">CLOSE</span></button>
+        <p style="margin:0;font-size:13px;letter-spacing:.3em;color:oklch(0.8 0.12 85)">MISSION BRIEFING</p>
+        <h2 style="margin:10px 0 24px;font-family:Cinzel,serif;font-weight:900;font-size:clamp(40px,5vw,64px);line-height:1">INNOVISION</h2>
+        <p style="margin:0 0 16px">Innovision is the techno-management fest of NIT Rourkela: a few days where the campus turns into a launch pad for builders, thinkers and makers from across the country.</p>
+        <p style="margin:0">Pick your world. <b>Flagship Events</b> for the technical arena, <b>Main Events</b> for workshops and talks, or <b>DTS and Fun Events</b> for the games, quizzes and showcases where the fest peaks.</p>
+        <div style="margin:28px 0 36px;border-top:1px solid rgba(236,232,223,.15)">
+          <div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(236,232,223,.15)"><span style="color:oklch(0.8 0.12 85)">Host</span><span>NIT Rourkela, Odisha</span></div>
+          <div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(236,232,223,.15)"><span style="color:oklch(0.8 0.12 85)">Worlds</span><span>Flagship Events · Main Events · DTS and Fun Events</span></div>
+          <div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid rgba(236,232,223,.15)"><span style="color:oklch(0.8 0.12 85)">Crew</span><span>Students, makers &amp; dreamers</span></div>
+        </div>
+        <a href="#/worlds/takeoff" onClick="{{ closeAbout }}" onMouseEnter="{{ hover }}" style="display:inline-flex;align-items:center;justify-content:center;min-width:168px;padding:17px 30px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.06em;color:#141312;background:#ECE8DF;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px);transition:background-color .4s" style-hover="background:oklch(0.8 0.12 85);color:#141312"><span data-scr="">EXPLORE THE WORLDS</span></a>
+      </div>
+    </div>
+  </aside>
+
+  <div aria-live="polite" style="position:fixed;left:0;right:0;bottom:calc(clamp(16px,2.6vw,44px) + 100px);z-index:70;display:flex;justify-content:center;pointer-events:none">
+    <div style="display:flex;align-items:center;gap:12px;padding:14px 22px;background:#141312;color:#ECE8DF;font-size:14px;font-weight:500;letter-spacing:.04em;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);opacity:{{ toastO }};transform:translateY({{ toastY }});transition:opacity .5s cubic-bezier(.25,1,.1,1),transform .5s cubic-bezier(.25,1,.1,1)">
+      <svg viewBox="0 0 24 24" style="width:14px;height:14px;color:oklch(0.8 0.12 85)"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+      Registrations open soon. Stay in orbit.
+    </div>
+  </div>
+
+  <!-- ================= LOADER ================= -->
+  <div data-loader="" data-screen-label="Loader" aria-hidden="true" style="position:fixed;inset:0;z-index:100;overflow:hidden">
+    <div data-loader-bg="" style="position:absolute;inset:0;background:#ECE8DF"></div>
+    <sc-for list="{{ loaderSparks }}" as="s" hint-placeholder-count="8">
+      <div data-l-fade="" style="position:absolute;left:{{ s.x }};top:{{ s.y }};width:{{ s.s }};height:{{ s.s }};color:#141312;pointer-events:none">
+        <svg data-twinkle="" viewBox="0 0 24 24" style="display:block;width:100%;height:100%"><path d="M12 0C12.8 7.5 16.5 11.2 24 12C16.5 12.8 12.8 16.5 12 24C11.2 16.5 7.5 12.8 0 12C7.5 11.2 11.2 7.5 12 0Z" fill="currentColor"></path></svg>
+      </div>
+    </sc-for>
+    <div data-l-fade="" data-l-corner="" style="position:absolute;top:clamp(16px,2.6vw,44px);left:clamp(16px,2.6vw,44px);font-weight:500;font-size:13px;letter-spacing:.3em">CELESTIAL ODYSSEY</div>
+    <div data-l-fade="" data-l-corner="" style="position:absolute;top:clamp(16px,2.6vw,44px);right:clamp(16px,2.6vw,44px);font-weight:500;font-size:13px;letter-spacing:.3em">MMXXVI</div>
+
+    <div style="position:absolute;left:calc(50% - min(62vmin, 560px) / 2);top:calc(44% - min(62vmin, 560px) / 2);width:min(62vmin, 560px);height:min(62vmin, 560px)">
+      <div data-l-ring="" style="position:absolute;inset:0;border-radius:50%;border:1px dotted rgba(20,19,18,.5)">
+        <div data-orbit="" data-dur="11" data-start="24" style="position:absolute;inset:0">
+          <img src="assets/planet-yellow.webp" alt="" style="position:absolute;left:50%;top:0;width:11%;height:11%;margin:-5.5% 0 0 -5.5%;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+        </div>
+      </div>
+      <div data-l-ring="" style="position:absolute;inset:14%;border-radius:50%;border:1px dashed rgba(20,19,18,.45)">
+        <div data-orbit="" data-dur="7" data-start="200" data-rev="1" style="position:absolute;inset:0">
+          <img src="assets/moon.webp" alt="" style="position:absolute;left:50%;top:0;width:12%;height:auto;margin:-6% 0 0 -6%;filter:grayscale(1) contrast(1.35) brightness(1.05)">
+        </div>
+      </div>
+      <div data-l-ring="" style="position:absolute;inset:26%;border-radius:50%;border:1px solid rgba(20,19,18,.3)">
+        <div data-orbit="" data-dur="3.6" data-start="120" style="position:absolute;inset:0">
+          <span style="position:absolute;left:50%;top:0;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:#141312"></span>
+        </div>
+      </div>
+      <svg data-l-fade="" viewBox="0 0 100 100" style="position:absolute;inset:31%;width:38%;height:38%;overflow:visible">
+        <circle cx="50" cy="50" r="49" fill="none" stroke="rgba(20,19,18,.14)" stroke-width="1.2"></circle>
+        <circle data-l-progress="" cx="50" cy="50" r="49" fill="none" stroke="#8a6a2a" stroke-width="1.6" stroke-dasharray="307.9" stroke-dashoffset="307.9" transform="rotate(-90 50 50)"></circle>
+      </svg>
+      <div data-loader-disc="" style="position:absolute;inset:34%;border-radius:50%;background:#141312;overflow:hidden">
+        <img src="assets/stars.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.95">
+        <span style="position:absolute;inset:4%;border-radius:50%;border:1px solid rgba(236,232,223,.14)"></span>
+        <div data-l-fade="" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#ECE8DF">
+          <span data-l-count="" style="font-family:Cinzel,serif;font-weight:900;font-size:min(6.6vmin, 58px);line-height:1;font-variant-numeric:tabular-nums">000</span>
+          <span style="margin-top:6px;font-size:min(1.3vmin, 11px);letter-spacing:.3em;opacity:.75">PERCENT</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:absolute;left:0;right:0;bottom:clamp(36px,8vh,90px);display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+      <div data-l-fade="" style="overflow:hidden"><div data-l-line="" style="font-size:12px;font-weight:500;letter-spacing:.34em">NIT ROURKELA PRESENTS</div></div>
+      <div data-l-fade="" style="overflow:hidden"><div data-l-line="" style="font-family:Cinzel,serif;font-weight:900;font-size:clamp(24px,2.6vw,38px);letter-spacing:.12em">INNOVISION 2026</div></div>
+      <div data-l-fade="" style="overflow:hidden"><div data-l-line="" style="font-size:12px;font-weight:700;letter-spacing:.3em;color:#8a6a2a"><span data-l-status="">ALIGNING THE ORBITS</span></div></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;loaderSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:2.8,&quot;min&quot;:1.2,&quot;max&quot;:6,&quot;step&quot;:0.2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Experience&quot;},&quot;startMuted&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Experience&quot;},&quot;skipLoader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Experience&quot;}}">
+const A = 'assets/';
+const WORLDS = [
+  { key: 'takeoff', name: 'Flagship Events', category: 'Technical Events', accent: 'oklch(0.6 0.15 45)', accentL: 'oklch(0.8 0.12 55)',
+    planet: A + 'planet-yellow.webp', astro: A + 'astro-red.webp', astroSit: false, music: 'takeoff',
+    statL: 'Mission 01', statR: 'Tech Arena', tagline: 'Code. Build. Break the atmosphere.',
+    intro: 'Strap in for the technical arena of Innovision. Hackathons, robotics and coding battles where ideas get their launch thrust. Bring your crew, your laptop and your wildest builds.',
+    specs: [['Category', 'Technical'], ['Format', 'Solo & team'], ['Launch pad', 'NIT Rourkela'], ['Fuel', 'Code & circuits'], ['Status', 'Boarding soon']],
+    missions: [['Hackathon', 'A non-stop build sprint. Ship a working prototype before the countdown hits zero.'], ['Robo Wars', 'Bring your bot into the arena. Last machine standing takes the crown.'], ['Code Sprint', 'Competitive programming under pressure. Fast logic, faster fingers.'], ['Circuit Lab', 'Design, debug and demo hardware that works on the first try.']] },
+  { key: 'touchdown', name: 'Main Events', category: 'Workshops & Talks', accent: 'oklch(0.6 0.15 235)', accentL: 'oklch(0.8 0.12 225)',
+    planet: A + 'planet-blue.webp', astro: A + 'astro-yellow.webp', astroSit: true, music: 'touchdown',
+    statL: 'Mission 02', statR: 'Learn & Land', tagline: 'A cosmic calm for curious minds.',
+    intro: 'Slow the descent and land on new ideas. Hands-on workshops and talks from people who have been there, built that, and are ready to show you how.',
+    specs: [['Category', 'Workshops'], ['Format', 'Hands-on'], ['Crew', 'Experts & alumni'], ['Fuel', 'Curiosity'], ['Status', 'Boarding soon']],
+    missions: [['AI & ML Workshop', 'From first model to deployed demo in a single session.'], ['Guest Lectures', 'Stories and lessons from engineers, founders and researchers.'], ['Startup Talks', 'How ideas become companies, straight from the people who did it.'], ['Maker Labs', 'Solder, print and prototype with guidance at every step.']] },
+  { key: 'highpoint', name: 'DTS and Fun Events', category: 'Games & Showcases', accent: 'oklch(0.6 0.15 150)', accentL: 'oklch(0.8 0.12 145)',
+    planet: A + 'planet-green.webp', astro: A + 'astro-green.webp', astroSit: false, music: 'highpoint',
+    statL: 'Mission 03', statR: 'Fun Zone', tagline: 'Ride the wave where the fest peaks.',
+    intro: 'The best of both worlds: competition meets celebration. Gaming arenas, quizzes and showcases that keep the energy high until the very last night.',
+    specs: [['Category', 'Fun & games'], ['Format', 'Open to all'], ['Vibe', 'Euphoric'], ['Fuel', 'Team spirit'], ['Status', 'Boarding soon']],
+    missions: [['Gaming Arena', 'Squad up for LAN battles and console showdowns.'], ['Quiz Night', 'Tech, pop culture and everything in between.'], ['Treasure Hunt', 'Clues scattered across campus. Only the sharpest crews finish.'], ['Project Expo', 'Walk the hall of student builds and vote for your favourite.']] },
+];
+const PRELOAD = ['indian-astronaut.png', 'stars.webp', 'moon.webp', 'planet-yellow.webp', 'planet-blue.webp', 'planet-green.webp',
+  'astro-red.webp', 'astro-yellow.webp', 'astro-green.webp', 'big-spaceship.webp', 'floor-v2.webp', 'planet-blue-half.webp',
+  'floor.webp', 'spaceship.webp', 'cloud-tl.webp', 'cloud-tr.webp', 'cloud-0.webp', 'cloud-1.webp', 'cloud-2.webp',
+  'cloud-3.webp', 'cloud-4.webp', 'cloud-5.webp', 'cloud-6.webp', 'home-rocks.webp'];
+const HERO_SPARKS = [
+  { x: '9%', y: '24%', s: '18px', c: '#141312' }, { x: '17%', y: '62%', s: '12px', c: '#141312' }, { x: '27%', y: '14%', s: '10px', c: '#141312' },
+  { x: '83%', y: '18%', s: '22px', c: '#141312' }, { x: '91%', y: '58%', s: '12px', c: '#141312' }, { x: '74%', y: '84%', s: '16px', c: '#141312' },
+  { x: '38%', y: '30%', s: '10px', c: '#ECE8DF' }, { x: '61%', y: '27%', s: '14px', c: '#ECE8DF' }, { x: '43%', y: '78%', s: '12px', c: '#ECE8DF' },
+  { x: '58%', y: '72%', s: '9px', c: '#ECE8DF' },
+];
+const LOADER_SPARKS = [
+  { x: '12%', y: '20%', s: '16px' }, { x: '22%', y: '70%', s: '10px' }, { x: '84%', y: '26%', s: '20px' }, { x: '78%', y: '64%', s: '12px' },
+  { x: '6%', y: '48%', s: '10px' }, { x: '93%', y: '44%', s: '9px' }, { x: '34%', y: '10%', s: '11px' }, { x: '66%', y: '86%', s: '14px' },
+];
+const STATUS = ['ALIGNING THE ORBITS', 'CHARTING CONSTELLATIONS', 'FUELLING THE THRUSTERS', 'PLOTTING THE ODYSSEY'];
+const SCRAMBLE = 'XYZXYZABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  state = { view: 'loading', index: 0, muted: false, about: false, compact: false, narrow: false, toastOn: false, curtainLabel: 'INNOVISION', curtainKicker: 'NOW ENTERING' };
+  busy = false; pending = false; slideDir = 0;
+
+  set(s) { return new Promise((r) => this.setState(s, r)); }
+
+  componentDidMount() {
+    let m = !!this.props.startMuted;
+    try { const v = localStorage.getItem('innovisionMuted'); if (v !== null) m = v === 'true'; } catch (e) {}
+    this.setState({ muted: m, compact: innerWidth < 1100, narrow: innerWidth < 720 });
+    this._resize = () => {
+      const c = innerWidth < 1100, n = innerWidth < 720;
+      if (c !== this.state.compact || n !== this.state.narrow) this.setState({ compact: c, narrow: n }, () => { if (this.state.view === 'detail') this.setupDetailScroll(true); });
+      this.fitTitle();
+    };
+    addEventListener('resize', this._resize);
+    const wait = () => (window.gsap && window.ScrollTrigger && window.Howl && this.rootRef.current) ? this.boot() : (this._w = setTimeout(wait, 40));
+    wait();
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this._w); clearTimeout(this._toast);
+    removeEventListener('resize', this._resize);
+    if (this._route) removeEventListener('hashchange', this._route);
+    if (this._key) removeEventListener('keydown', this._key);
+    if (this._mm) removeEventListener('mousemove', this._mm);
+    if (window.ScrollTrigger) ScrollTrigger.getAll().forEach((t) => t.kill());
+    if (window.gsap) gsap.globalTimeline.clear();
+    if (window.Howler) Howler.unload();
+  }
+
+  boot() {
+    const g = gsap;
+    g.registerPlugin(ScrollTrigger, ScrambleTextPlugin);
+    const R = this.rootRef.current;
+    this.$ = (s) => R.querySelector(s);
+    this.$$ = (s) => [...R.querySelectorAll(s)];
+    this.reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (this.reduce) g.globalTimeline.timeScale(1.6);
+    g.set(this.$$('[data-view]'), { autoAlpha: 0 });
+    g.set(this.$$('[data-slide]'), { autoAlpha: 0 });
+    g.set(this.$$('[data-c-layer]'), { y: 0, yPercent: 100 / 3 });
+    g.set(this.$$('[data-hud]'), { autoAlpha: 0 });
+    this.sound();
+    this.loops();
+    this.parallax();
+    this.homeScroll();
+    this._route = () => this.route();
+    addEventListener('hashchange', this._route);
+    this._key = (e) => this.onKey(e);
+    addEventListener('keydown', this._key);
+    if (this.props.skipLoader) { g.set(this.$('[data-loader]'), { display: 'none' }); this.firstPaint(); return; }
+    this.loaderIntro();
+    this.runLoader().then(() => this.loaderExit());
+  }
+
+  /* ---------- ambient loops ---------- */
+  loops() {
+    const g = gsap;
+    this.$$('[data-orbit]').forEach((el) => {
+      const st = +el.dataset.start || 0, dir = el.dataset.rev ? -1 : 1;
+      g.fromTo(el, { rotation: st }, { rotation: st + 360 * dir, duration: +el.dataset.dur || 60, ease: 'none', repeat: -1 });
+    });
+    this.$$('[data-spin]').forEach((el) => g.to(el, { rotation: '+=360', duration: +el.dataset.spin || 140, ease: 'none', repeat: -1 }));
+    this.$$('[data-twinkle]').forEach((el, i) => g.fromTo(el, { scale: .5, opacity: .3 }, { scale: 1, opacity: 1, duration: 1.1 + ((i * 37) % 17) / 10, ease: 'sine.inOut', repeat: -1, yoyo: true, delay: (i * .23) % 2 }));
+    this.$$('[data-bob]').forEach((el) => g.to(el, { y: -22, rotation: '+=4', duration: 3.6, ease: 'sine.inOut', repeat: -1, yoyo: true }));
+    this.$$('[data-marquee]').forEach((el) => g.to(el, { xPercent: -50, duration: +el.dataset.marquee || 36, ease: 'none', repeat: -1 }));
+    this.$$('[data-hint-line]').forEach((el) => g.timeline({ repeat: -1 }).fromTo(el, { scaleY: 0, opacity: 1, transformOrigin: 'top' }, { scaleY: 1, duration: 1.1, ease: 'expo.out' }).to(el, { opacity: 0, duration: .7 }));
+    this.$$('[data-c-spark]').forEach((el) => g.to(el, { rotation: 360, duration: 6, ease: 'none', repeat: -1 }));
+    this.waveLoop();
+  }
+  waveLoop() {
+    const w = this.$('[data-wave]');
+    if (w && !w._tw) { w._tw = gsap.to(w, { scaleY: .35, transformOrigin: 'center', duration: 1.1, ease: 'sine.inOut', repeat: -1, yoyo: true }); }
+  }
+  componentDidUpdate() { if (this.$) this.waveLoop(); }
+
+  /* ---------- sound ---------- */
+  sound() {
+    const html5 = location.protocol === 'file:';
+    const h = (f, v, o = {}) => new Howl(Object.assign({ src: [A + f], volume: v, html5 }, o));
+    this.sfx = { beep: h('beep.mp3', .05), swoosh: h('swoosh.mp3', .5), thump: h('thump.mp3', .6), thumpSoft: h('thump.mp3', .2), vanish: h('vanish.mp3', .2), fx: h('splash-fx.mp3', .4) };
+    this.music = {
+      home: { h: h('splash.mp3', 0, { loop: true, html5: true }), vol: .6 },
+      takeoff: { h: h('song-takeoff.mp3', 0, { loop: true, html5: true }), vol: .7 },
+      touchdown: { h: h('song-touchdown.mp3', 0, { loop: true, html5: true }), vol: .9, seek: 4 },
+      highpoint: { h: h('song-highpoint.mp3', 0, { loop: true, html5: true }), vol: .5 },
+    };
+    Howler.mute(this.state.muted);
+    this.unlocked = false;
+    const un = () => { if (this.unlocked) return; this.unlocked = true; if (this.wanted) this.playMusic(this.wanted, true); };
+    ['pointerdown', 'keydown'].forEach((ev) => addEventListener(ev, un, { once: true, capture: true }));
+    document.addEventListener('visibilitychange', () => Howler.mute(this.state.muted || document.hidden));
+  }
+  play(n) { if (this.unlocked && this.sfx && this.sfx[n]) this.sfx[n].play(); }
+  playMusic(key, force) {
+    this.wanted = key;
+    if (!this.unlocked || !this.music || (!force && this.curMusic === key)) return;
+    Object.keys(this.music).forEach((k) => {
+      if (k === key) return;
+      const m = this.music[k].h;
+      if (m.playing()) { m.fade(m.volume(), 0, 900); m.once('fade', () => { if (this.curMusic !== k) m.pause(); }); }
+    });
+    const m = this.music[key];
+    if (!m.h.playing()) { if (m.seek && !m.started) m.h.seek(m.seek); m.started = true; m.h.play(); }
+    m.h.fade(m.h.volume(), m.vol, 1400);
+    this.curMusic = key;
+  }
+
+  /* ---------- loader ---------- */
+  loaderIntro() {
+    gsap.timeline()
+      .from(this.$$('[data-l-ring]'), { scale: .4, autoAlpha: 0, duration: 1.8, ease: 'expo.out', stagger: .14 }, 0)
+      .from(this.$('[data-loader-disc]'), { scale: 0, duration: 1.3, ease: 'back.out(1.6)' }, .15)
+      .from(this.$$('[data-l-line]'), { yPercent: 110, duration: 1.1, ease: 'expo.out', stagger: .08 }, .45)
+      .from(this.$$('[data-l-corner]'), { autoAlpha: 0, duration: 1 }, .7);
+  }
+  setStatus(t) {
+    const el = this.$('[data-l-status]');
+    if (el) gsap.to(el, { duration: .6, scrambleText: { text: t, chars: SCRAMBLE, speed: .5 }, overwrite: true });
+  }
+  runLoader() {
+    return new Promise((res) => {
+      let loaded = 0, shown = 0, last = 0;
+      const N = PRELOAD.length;
+      PRELOAD.forEach((f) => { const im = new Image(); im.onload = im.onerror = () => { loaded++; }; im.src = A + f; });
+      const minMs = (this.props.loaderSeconds ?? 2.8) * 1000;
+      const t0 = performance.now();
+      setTimeout(() => { loaded = N; }, 9000);
+      const cnt = this.$('[data-l-count]'), prog = this.$('[data-l-progress]');
+      const tick = () => {
+        const cap = Math.min((loaded / N) * 100, ((performance.now() - t0) / minMs) * 100);
+        shown = Math.min(100, Math.min(cap, shown + (this.reduce ? 4 : 1.6)));
+        cnt.textContent = String(Math.floor(shown)).padStart(3, '0');
+        prog.style.strokeDashoffset = 307.9 * (1 - shown / 100);
+        const si = Math.min(3, Math.floor(shown / 25));
+        if (si !== last) { last = si; this.setStatus(STATUS[si]); }
+        if (shown >= 100) { gsap.ticker.remove(tick); res(); }
+      };
+      gsap.ticker.add(tick);
+    });
+  }
+  async loaderExit() {
+    const g = gsap;
+    const to = this.parse();
+    this.setStatus('ORBITS ALIGNED');
+    await new Promise((r) => setTimeout(r, 380));
+    if (to.view !== 'home') {
+      await this.prepView(to);
+      g.timeline()
+        .to(this.$$('[data-l-fade]'), { autoAlpha: 0, duration: .5 }, 0)
+        .to(this.$$('[data-l-ring]'), { scale: 2, autoAlpha: 0, duration: 1.2, ease: 'power3.in', stagger: .05 }, 0)
+        .to(this.$('[data-loader-disc]'), { scale: 0, duration: .9, ease: 'power3.in' }, .2)
+        .to(this.$('[data-loader]'), { autoAlpha: 0, duration: .9 }, .8)
+        .add(() => { g.set(this.$('[data-loader]'), { display: 'none' }); this.enterView(to); g.to(this.$$('[data-hud]'), { autoAlpha: 1, duration: 1 }); }, 1.1);
+      return;
+    }
+    await this.showView('home');
+    const disc = this.$('[data-loader-disc]'), target = this.$('[data-hero-disc]');
+    g.set(target, { autoAlpha: 0 });
+    const he = this.homeEnter().pause(0);
+    const a = disc.getBoundingClientRect(), b = target.getBoundingClientRect();
+    g.timeline()
+      .to(this.$$('[data-l-fade]'), { autoAlpha: 0, duration: .5, ease: 'power2.in' }, 0)
+      .to(this.$$('[data-l-ring]'), { scale: 2.4, autoAlpha: 0, duration: 1.4, ease: 'power3.in', stagger: .06 }, 0)
+      .to(disc, { x: (b.left + b.width / 2) - (a.left + a.width / 2), y: (b.top + b.height / 2) - (a.top + a.height / 2), scale: b.width / a.width, duration: 1.6, ease: 'expo.inOut' }, .35)
+      .to(this.$('[data-loader-bg]'), { autoAlpha: 0, duration: 1, ease: 'power2.inOut' }, .95)
+      .add(() => { this.play('fx'); this.playMusic('home'); he.play(); }, 1.25)
+      .add(() => { g.set(target, { autoAlpha: 1 }); g.set(this.$('[data-loader]'), { display: 'none' }); }, 1.96);
+  }
+  async firstPaint() {
+    const to = this.parse();
+    await this.prepView(to);
+    this.enterView(to);
+    gsap.to(this.$$('[data-hud]'), { autoAlpha: 1, duration: .6 });
+  }
+  async prepView(to) {
+    if (to.view === 'home') { gsap.set(this.$('[data-hero-disc]'), { autoAlpha: 1, scale: 1 }); this.$('[data-view="home"]').scrollTop = 0; }
+    else { await this.setSlide(to.index); if (to.view === 'detail') await this.prepDetail(to.index); }
+    await this.showView(to.view);
+  }
+  enterView(to) {
+    if (to.view === 'home') { this.playMusic('home'); return this.homeEnter(); }
+    this.playMusic(WORLDS[to.index].music);
+    return to.view === 'detail' ? this.detailEnter() : this.worldsEnter(to.index);
+  }
+
+  /* ---------- home ---------- */
+  homeEnter() {
+    const g = gsap, $ = this.$, $$ = this.$$;
+    return g.timeline()
+      .fromTo($$('[data-h-ring]'), { scale: .84, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2.2, ease: 'expo.out', stagger: .12 }, 0)
+      .fromTo($('[data-h-planet]'), { yPercent: 45, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, duration: 2.2, ease: 'expo.out' }, .15)
+      .fromTo($$('[data-h-kicker]'), { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 1.2, ease: 'expo.out' }, .2)
+      .fromTo($$('[data-h-ch]'), { yPercent: 105, autoAlpha: 0, rotation: 7 }, { yPercent: 0, autoAlpha: 1, rotation: 0, duration: 1.5, ease: 'expo.out', stagger: .055 }, .25)
+      .fromTo($('[data-h-astro]'), { x: 200, y: 90, rotation: 28, autoAlpha: 0 }, { x: 0, y: 0, rotation: 0, autoAlpha: 1, duration: 2.6, ease: 'expo.out' }, .35)
+      .fromTo($$('[data-h-sub]'), { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 1.2, ease: 'expo.out' }, .75)
+      .fromTo($$('[data-h-cta]'), { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 1.1, ease: 'expo.out', stagger: .08 }, .9)
+      .fromTo($$('[data-h-spark]'), { autoAlpha: 0 }, { autoAlpha: 1, duration: 1.4, stagger: .05 }, .6)
+      .fromTo($('[data-h-scroll]'), { autoAlpha: 0 }, { autoAlpha: 1, duration: 1 }, 1.4)
+      .to($$('[data-hud]'), { autoAlpha: 1, duration: 1 }, .8);
+  }
+  homeLeave() {
+    const g = gsap, $ = this.$, $$ = this.$$;
+    return g.timeline()
+      .to($$('[data-h-ch]'), { yPercent: -60, autoAlpha: 0, duration: .8, ease: 'power3.in', stagger: .03 }, 0)
+      .to([...$$('[data-h-kicker]'), ...$$('[data-h-sub]'), ...$$('[data-h-cta]'), $('[data-h-scroll]')], { autoAlpha: 0, y: -20, duration: .5, ease: 'power2.in' }, 0)
+      .to($('[data-hero-disc]'), { scale: 1.3, duration: 1.8, ease: 'power3.in' }, 0)
+      .to($('[data-h-astro]'), { x: 220, y: -220, rotation: 30, autoAlpha: 0, duration: 1.6, ease: 'power3.in' }, 0)
+      .to($('[data-h-planet]'), { yPercent: 40, duration: 1.6, ease: 'power3.in' }, 0)
+      .to($$('[data-h-ring]'), { scale: 1.3, autoAlpha: 0, duration: 1.6, ease: 'power3.in', stagger: .05 }, 0);
+  }
+  homeScroll() {
+    const sc = this.$('[data-view="home"]');
+    gsap.to(this.$('[data-h-par]'), { yPercent: 22, ease: 'none', scrollTrigger: { trigger: this.$('[data-hero]'), scroller: sc, start: 'top top', end: 'bottom top', scrub: true } });
+    this.$$('[data-view="home"] [data-reveal]').forEach((el) => gsap.fromTo(el, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 1.2, ease: 'expo.out', scrollTrigger: { trigger: el, scroller: sc, start: 'top 88%' } }));
+  }
+
+  /* ---------- views ---------- */
+  async showView(name) {
+    this.$$('[data-view]').forEach((el) => gsap.set(el, { autoAlpha: el.dataset.view === name ? 1 : 0 }));
+    await this.set({ view: name });
+    this.refreshParallax();
+  }
+  parts(s) {
+    return { hero: s.querySelector('[data-s-hero]'), rot: s.querySelector('[data-s-rot]'), astro: s.querySelector('[data-s-astro]'), outline: s.querySelector('[data-s-outline]'), labels: [...s.querySelectorAll('[data-s-label]')] };
+  }
+  clr(els) { gsap.set(els.flat().filter(Boolean), { clearProps: 'transform,opacity,visibility,filter,zIndex' }); }
+  async setSlide(i) {
+    await this.set({ index: i });
+    this.$$('[data-slide]').forEach((s, k) => { this.clr(Object.values(this.parts(s))); gsap.set(s, { autoAlpha: k === i ? 1 : 0, zIndex: 'auto' }); });
+    this.refreshParallax();
+  }
+  worldsEnter(i) {
+    const p = this.parts(this.$$('[data-slide]')[i]);
+    this.clr(Object.values(p));
+    return gsap.timeline()
+      .fromTo(p.hero, { yPercent: 40 }, { yPercent: 0, duration: 2, ease: 'expo.out' }, 0)
+      .fromTo(p.rot, { rotation: -30 }, { rotation: 0, duration: 2.4, ease: 'expo.out' }, 0)
+      .fromTo(p.astro, { y: -innerHeight * .4, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1.8, ease: 'expo.out' }, .35)
+      .fromTo(p.outline, { autoAlpha: 0 }, { autoAlpha: 1, duration: 1.4 }, .3)
+      .fromTo(p.labels, { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 1, ease: 'expo.out', stagger: .1 }, .7);
+  }
+  slideTo(to, dir) {
+    const g = gsap, sl = this.$$('[data-slide]'), from = this.state.index;
+    const a = sl[from], b = sl[to], pa = this.parts(a), pb = this.parts(b);
+    const W = innerWidth, H = innerHeight;
+    this.play('swoosh'); this.play('thumpSoft');
+    this.playMusic(WORLDS[to].music);
+    this.setState({ index: to });
+    this.clr(Object.values(pb));
+    g.set(a, { zIndex: 1 }); g.set(b, { zIndex: 2, autoAlpha: 0 });
+    return new Promise((resolve) => {
+      g.timeline({ onComplete: () => { g.set(a, { autoAlpha: 0, zIndex: 'auto' }); g.set(b, { zIndex: 'auto' }); this.clr(Object.values(pa)); this.refreshParallax(); resolve(); } })
+        .to(pa.hero, { x: -W * .7 * dir, yPercent: 12, duration: 1.3, ease: 'power3.inOut' }, 0)
+        .to(pa.rot, { rotation: -70 * dir, duration: 1.3, ease: 'power3.inOut' }, 0)
+        .to(pa.astro, { x: -W * .15 * dir, y: -H * .35, rotation: -25 * dir, autoAlpha: 0, duration: 1, ease: 'power3.in' }, 0)
+        .to([pa.outline, ...pa.labels], { autoAlpha: 0, duration: .5 }, 0)
+        .to(b, { autoAlpha: 1, duration: 1, ease: 'power2.inOut' }, .2)
+        .fromTo(pb.hero, { x: W * .7 * dir, yPercent: 12 }, { x: 0, yPercent: 0, duration: 1.5, ease: 'expo.out' }, .55)
+        .fromTo(pb.rot, { rotation: 70 * dir }, { rotation: 0, duration: 1.8, ease: 'expo.out' }, .55)
+        .fromTo(pb.astro, { y: -H * .4, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1.5, ease: 'expo.out' }, .95)
+        .fromTo(pb.outline, { autoAlpha: 0 }, { autoAlpha: 1, duration: 1 }, .8)
+        .fromTo(pb.labels, { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: .9, ease: 'expo.out', stagger: .08 }, 1);
+    });
+  }
+
+  /* ---------- detail ---------- */
+  async prepDetail(i) {
+    await this.set({ index: i });
+    this.setupDetailScroll();
+  }
+  setupDetailScroll(keep) {
+    const g = gsap, root = this.$('[data-view="detail"]'), sc = this.$('[data-d-scroller]');
+    (this.dTriggers || []).forEach((t) => t && t.kill());
+    if (this.dtl) { this.dtl.scrollTrigger && this.dtl.scrollTrigger.kill(); this.dtl.kill(); }
+    if (!keep) sc.scrollTop = 0;
+    const q = (s) => [...root.querySelectorAll(s)];
+    g.set(q('[data-speed],[data-d-titleblock],[data-d-hint],[data-d-word],[data-d-intro],[data-d-spec],[data-d-fade],[data-d-card]'), { clearProps: 'transform,opacity,visibility,filter' });
+    const H = () => innerHeight;
+    const tl = g.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: root.querySelector('[data-d-track]'), scroller: sc, start: 'top top', end: 'bottom bottom', scrub: 1, invalidateOnRefresh: true } });
+    q('[data-speed]').forEach((el) => { const sp = parseFloat(el.dataset.speed) || 0; tl.to(el, { y: () => H() * sp * 2, duration: 1 }, 0); });
+    tl.to(root.querySelector('[data-d-titleblock]'), { scale: 1.25, autoAlpha: 0, y: () => -H() * .08, duration: .3 }, 0)
+      .to(root.querySelector('[data-d-hint]'), { autoAlpha: 0, duration: .08 }, 0)
+      .fromTo(q('[data-d-word]'), { autoAlpha: 0, y: 40, filter: 'blur(10px)' }, { autoAlpha: 1, y: 0, filter: 'blur(0px)', duration: .12, stagger: .03 }, .24);
+    const intro = root.querySelector('[data-d-intro]'), spec = root.querySelector('[data-d-spec]');
+    if (intro) tl.fromTo(intro, { autoAlpha: 0, x: -60 }, { autoAlpha: 1, x: 0, duration: .18 }, .5);
+    if (spec) tl.fromTo(spec, { autoAlpha: 0, x: 60 }, { autoAlpha: 1, x: 0, duration: .18 }, .56);
+    tl.fromTo(root.querySelector('[data-d-fade]'), { autoAlpha: 0 }, { autoAlpha: 1, duration: .25 }, .75);
+    this.dtl = tl;
+    this.dTriggers = q('[data-d-card]').map((card) => g.fromTo(card, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: card, scroller: sc, start: 'top 90%' } }).scrollTrigger);
+    this.fitTitle();
+    ScrollTrigger.refresh();
+  }
+  detailEnter() {
+    const root = this.$('[data-view="detail"]');
+    return gsap.timeline()
+      .fromTo(root.querySelectorAll('[data-d-ch]'), { yPercent: 70, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, duration: 1.4, ease: 'expo.out', stagger: .05 }, .1)
+      .fromTo(root.querySelector('[data-d-stats]'), { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 1.2, ease: 'expo.out' }, .5)
+      .fromTo(root.querySelectorAll('[data-speed] > img, [data-speed] > div'), { scale: 1.08 }, { scale: 1, duration: 2.4, ease: 'expo.out' }, 0)
+      .fromTo(root.querySelector('[data-d-hint]'), { autoAlpha: 0 }, { autoAlpha: 1, duration: 1 }, 1);
+  }
+  fitTitle() {
+    const el = this.$ && this.$('[data-d-title]');
+    if (!el) return;
+    el.style.fontSize = 'clamp(56px, 13vw, 250px)';
+    const max = innerWidth * .9, w = el.scrollWidth;
+    if (w > max) el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * (max / w)) + 'px';
+  }
+
+  /* ---------- curtain ---------- */
+  async curtain(kicker, label, { delay = 0, covered, reveal } = {}) {
+    await this.set({ curtainKicker: kicker, curtainLabel: label });
+    const g = gsap, L = this.$$('[data-c-layer]'), c = this.$('[data-curtain]');
+    return new Promise((resolve) => {
+      g.set(c, { pointerEvents: 'auto' });
+      g.set(L, { y: 0, yPercent: 100 / 3 });
+      const tl = g.timeline({ delay, onComplete: () => { g.set(c, { pointerEvents: 'none' }); resolve(); } });
+      tl.to(L, { yPercent: -100 / 3, duration: 1.3, ease: 'power3.inOut', stagger: .09 })
+        .add(() => {
+          this.play('thump');
+          tl.pause();
+          Promise.resolve(covered && covered()).then(() => requestAnimationFrame(() => tl.resume()));
+        })
+        .add(() => { if (reveal) reveal(); }, '+=0.35')
+        .to(L, { yPercent: -100, duration: 1.4, ease: 'power3.inOut', stagger: { each: .09, from: 'end' } }, '<');
+    });
+  }
+
+  /* ---------- router ---------- */
+  parse() {
+    const [v, k] = location.hash.replace(/^#\/?/, '').split('/');
+    const f = WORLDS.findIndex((w) => w.key === k);
+    if (v === 'worlds') return { view: 'worlds', index: f >= 0 ? f : this.state.index };
+    if (v === 'world' && f >= 0) return { view: 'detail', index: f };
+    return { view: 'home', index: this.state.index };
+  }
+  go(hash, replace) {
+    if (location.hash === hash) return this.route();
+    if (replace) location.replace(hash); else location.hash = hash;
+  }
+  async route() {
+    if (this.state.view === 'loading') return;
+    if (this.busy) { this.pending = true; return; }
+    const to = this.parse(), s = this.state;
+    if (to.view === s.view && (to.view === 'home' || to.index === s.index)) return;
+    if (this.state.about) this.setState({ about: false });
+    this.busy = true;
+    try { await this.transition(to); } finally { this.busy = false; this.slideDir = 0; }
+    if (this.pending) { this.pending = false; this.route(); }
+  }
+  async transition(to) {
+    const from = this.state.view, w = WORLDS[to.index];
+    if (to.view === 'home') {
+      this.play('vanish');
+      let he;
+      await this.curtain('RETURNING TO', 'INNOVISION', {
+        covered: async () => { await this.prepView(to); he = this.homeEnter().pause(0); },
+        reveal: () => { this.playMusic('home'); he.play(); },
+      });
+      return;
+    }
+    if (to.view === 'worlds' && from === 'worlds') {
+      await this.slideTo(to.index, this.slideDir || (to.index > this.state.index ? 1 : -1));
+      return;
+    }
+    const kicker = 'NOW ENTERING', label = to.view === 'worlds' ? 'THE WORLDS' : w.name.toUpperCase();
+    if (from === 'home') this.homeLeave(); else this.play('vanish');
+    let tlIn;
+    await this.curtain(kicker, label, {
+      delay: from === 'home' ? .55 : 0,
+      covered: async () => { await this.prepView(to); tlIn = this.enterView(to); tlIn.pause(0); },
+      reveal: () => tlIn.play(),
+    });
+  }
+
+  /* ---------- interaction ---------- */
+  stepSlide(d) {
+    if (this.busy || this.state.view !== 'worlds') return;
+    this.slideDir = d;
+    this.go('#/worlds/' + WORLDS[(this.state.index + d + 3) % 3].key, true);
+  }
+  navTo(k) {
+    const key = WORLDS[k].key;
+    if (this.state.view === 'detail') this.go('#/world/' + key);
+    else { if (k !== this.state.index) this.slideDir = k > this.state.index ? 1 : -1; this.go('#/worlds/' + key, this.state.view === 'worlds'); }
+  }
+  onKey(e) {
+    if (e.key === 'Escape' && this.state.about) { this.setState({ about: false }); return; }
+    const v = this.state.view;
+    if (v === 'worlds') {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); this.stepSlide(1); }
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); this.stepSlide(-1); }
+      if (e.key === 'Enter' && e.target === document.body) this.go('#/world/' + WORLDS[this.state.index].key);
+    } else if (v === 'detail' && e.key === 'Escape') this.go('#/worlds/' + WORLDS[this.state.index].key);
+  }
+  parallax() {
+    if (matchMedia('(pointer: coarse)').matches || this.reduce) return;
+    let raf = 0;
+    this._mm = (e) => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        const mx = e.clientX / innerWidth - .5, my = e.clientY / innerHeight - .5;
+        (this.pEls || []).forEach((el) => { const d = parseFloat(el.dataset.depth) || 0; gsap.to(el, { x: mx * -40 * d, y: my * -60 * d, duration: 3, ease: 'power2.out', overwrite: 'auto' }); });
+      });
+    };
+    addEventListener('mousemove', this._mm, { passive: true });
+  }
+  refreshParallax() {
+    const v = this.$('[data-view="' + this.state.view + '"]');
+    this.pEls = v ? [...v.querySelectorAll('[data-depth]')].filter((el) => { const s = el.closest('[data-slide]'); return !s || +s.dataset.slide === this.state.index; }) : [];
+  }
+  hover = (e) => {
+    this.play('beep');
+    if (this.reduce || !window.gsap) return;
+    const sp = e.currentTarget.querySelector('[data-scr]');
+    if (!sp) return;
+    sp.dataset.text = sp.dataset.text || sp.textContent;
+    gsap.to(sp, { duration: .5, scrambleText: { text: sp.dataset.text, chars: SCRAMBLE, speed: .6 }, overwrite: true });
+  };
+  beep = () => this.play('beep');
+  register = (e) => {
+    e.preventDefault();
+    this.play('thumpSoft');
+    this.setState({ toastOn: true });
+    clearTimeout(this._toast);
+    this._toast = setTimeout(() => this.setState({ toastOn: false }), 3200);
+  };
+  toggleSound = () => {
+    const m = !this.state.muted;
+    if (window.Howler) Howler.mute(m);
+    try { localStorage.setItem('innovisionMuted', String(m)); } catch (e) {}
+    this.setState({ muted: m });
+  };
+  wheelLock = false;
+  onWheel = (e) => {
+    const d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if (this.wheelLock || Math.abs(d) < 30) return;
+    this.wheelLock = true;
+    setTimeout(() => { this.wheelLock = false; }, 1500);
+    this.stepSlide(d > 0 ? 1 : -1);
+  };
+  onTouchStart = (e) => { this.touch = { x: e.touches[0].clientX, y: e.touches[0].clientY }; };
+  onTouchEnd = (e) => {
+    if (!this.touch) return;
+    const dx = e.changedTouches[0].clientX - this.touch.x, dy = e.changedTouches[0].clientY - this.touch.y;
+    this.touch = null;
+    if (Math.max(Math.abs(dx), Math.abs(dy)) < 50) return;
+    const d = Math.abs(dx) > Math.abs(dy) ? dx : dy;
+    this.stepSlide(d < 0 ? 1 : -1);
+  };
+
+  renderVals() {
+    const s = this.state, i = s.index, w = WORLDS[i], nx = WORLDS[(i + 1) % 3];
+    const navOn = s.view === 'worlds' || s.view === 'detail';
+    return {
+      rootRef: this.rootRef,
+      heroChars: 'INNOVISION'.split('').map((ch) => ({ ch })),
+      heroSparks: HERO_SPARKS,
+      loaderSparks: LOADER_SPARKS,
+      worlds: WORLDS.map((x, k) => ({
+        ...x, href: '#/world/' + x.key, statLU: x.statL.toUpperCase(), categoryU: x.category.toUpperCase(),
+        astroBottom: x.astroSit ? 'calc(100% - 7vh)' : 'calc(100% - 3.5vh)', astroH: x.astroSit ? (s.narrow ? '32vh' : '42vh') : (s.narrow ? '30vh' : '40vh'),
+        onExplore: () => this.go('#/world/' + x.key),
+        onEnter: (e) => { this.play('beep'); window.gsap && gsap.to(e.currentTarget.querySelector('[data-card-planet]'), { scale: 1.1, duration: .9, ease: 'expo.out' }); },
+        onLeave: (e) => { window.gsap && gsap.to(e.currentTarget.querySelector('[data-card-planet]'), { scale: 1, duration: .9, ease: 'expo.out' }); },
+      })),
+      cw: {
+        ...w, categoryU: w.category.toUpperCase(),
+        chars: [...w.name.toUpperCase()].map((ch) => ({ ch: ch === ' ' ? '\u00a0' : ch })),
+        words: w.tagline.split(' ').map((t) => ({ t })),
+        specs: w.specs.map(([k, v]) => ({ k, v })),
+        missions: w.missions.map(([name, text], k) => ({ no: String(k + 1).padStart(2, '0'), name, text })),
+      },
+      nw: { href: '#/world/' + nx.key, nameU: nx.name.toUpperCase() },
+      titleShadow: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => `${n}px ${n}px 0 ${w.accent}`).join(', '),
+      isTakeoff: w.key === 'takeoff', isTouchdown: w.key === 'touchdown', isHighpoint: w.key === 'highpoint',
+      isHome: s.view === 'home' || s.view === 'loading', isWorlds: s.view === 'worlds', isDetail: s.view === 'detail',
+      compact: s.compact, notCompact: !s.compact,
+      taglineW: s.compact ? '88vw' : 'min(640px, 34vw)',
+      labelRight: s.narrow ? '8%' : (s.compact ? '10%' : '26%'),
+      arrowsDisplay: s.narrow ? 'none' : 'grid',
+      backHref: '#/worlds/' + w.key,
+      nav: WORLDS.map((x, k) => ({ label: x.name.toUpperCase(), current: String(k === i), color: k === i ? (s.view === 'detail' ? x.accentL : '#ECE8DF') : 'rgba(236,232,223,.55)', onClick: () => this.navTo(k) })),
+      navX: (i * 100) + '%',
+      navGlow: `linear-gradient(90deg, transparent, color-mix(in oklab, ${w.accentL} 28%, transparent), transparent)`,
+      navO: navOn ? 1 : 0, navY: navOn ? '0px' : '30px', navPE: navOn ? 'auto' : 'none',
+      navBottom: s.narrow ? 'calc(clamp(16px,2.6vw,44px) + 40px)' : 'clamp(16px,2.6vw,44px)',
+      muted: s.muted, soundOn: !s.muted, soundLabel: s.muted ? 'Turn sound on' : 'Turn sound off', toggleSound: this.toggleSound,
+      aboutVis: s.about ? 'visible' : 'hidden', aboutDelay: s.about ? '0s' : '.8s', aboutO: s.about ? 1 : 0, aboutX: s.about ? '0%' : '100%',
+      aboutHidden: String(!s.about), aboutExpanded: String(s.about),
+      toggleAbout: () => { this.play('thumpSoft'); this.setState({ about: !s.about }); },
+      openAbout: (e) => { e && e.preventDefault(); this.play('thumpSoft'); this.setState({ about: true }); },
+      closeAbout: () => this.setState({ about: false }),
+      toTop: (e) => { e.preventDefault(); const h = this.$ && this.$('[data-view="home"]'); if (h) h.scrollTo({ top: 0, behavior: 'smooth' }); },
+      toastO: s.toastOn ? 1 : 0, toastY: s.toastOn ? '0px' : '16px',
+      register: this.register, hover: this.hover, beep: this.beep,
+      curtainLabel: s.curtainLabel, curtainKicker: s.curtainKicker,
+      prevSlide: () => this.stepSlide(-1), nextSlide: () => this.stepSlide(1),
+      onWheel: this.onWheel, onTouchStart: this.onTouchStart, onTouchEnd: this.onTouchEnd,
+    };
+  }
+}
+</script>
+</body>
+</html>
